@@ -24,7 +24,4 @@ dist-ssr
 *.sln
 *.sw?
 
-# Brand Assets requested in gitignore
-ajo-ng-app-icon.png
-public/ajo-ng-app-icon.png
-src/assets/ajo-ng-app-icon.png
+
