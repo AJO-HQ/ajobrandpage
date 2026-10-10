@@ -1,6 +1,7 @@
 import React from 'react';
-import { Smartphone, ArrowRight, CheckCircle, Users, Building2 } from 'lucide-react';
+import { Smartphone, ArrowRight, CheckCircle, Users } from 'lucide-react';
 import { PhoneMockup } from './PhoneMockup';
+import { ProvidusBankLogo } from './ProvidusBankLogo';
 import { APP_CONFIG } from '../config/appConfig';
 
 interface HeroProps {
@@ -85,13 +86,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenStoreModal }) => {
                 </div>
               </div>
 
-              {/* Partnership Mention */}
-              <div className="flex items-center justify-center lg:justify-start gap-2 pt-1 text-xs text-slate-500">
-                <span>{APP_CONFIG.partnership.badgeLabel}:</span>
-                <span className="inline-flex items-center gap-1.5 font-bold text-slate-900 bg-white/90 border border-slate-200/80 px-2.5 py-0.5 rounded-md shadow-2xs">
-                  <Building2 className="w-3.5 h-3.5 text-brand-600" />
-                  {APP_CONFIG.partnership.partnerName}
-                </span>
+              {/* Secondary Banking Partnership Indicator */}
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1 text-xs text-slate-500">
+                <span className="font-semibold text-slate-600">{APP_CONFIG.partnership.badgeLabel}:</span>
+                <div className="inline-flex items-center bg-white/95 border border-slate-200/90 px-2.5 py-1 rounded-lg shadow-2xs">
+                  <ProvidusBankLogo size="sm" />
+                </div>
               </div>
             </div>
           </div>

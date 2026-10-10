@@ -17,7 +17,10 @@ export interface StoreLinkConfig {
 export interface PartnershipConfig {
   partnerName: string;
   badgeLabel: string;
+  eyebrow: string;
+  headline: string;
   statement: string;
+  supportingText: string;
   disclaimer: string;
 }
 
@@ -39,7 +42,10 @@ export const APP_CONFIG = {
   partnership: {
     partnerName: 'Providus Bank',
     badgeLabel: 'Banking Partner',
+    eyebrow: 'OUR BANKING PARTNER',
+    headline: 'Built on a Banking Partnership',
     statement: 'In partnership with Providus Bank',
+    supportingText: 'AJO.ng works with Providus Bank as part of its banking partnership.',
     disclaimer: 'Banking infrastructure and institutional support powered in collaboration with Providus Bank.',
   } satisfies PartnershipConfig,
 
