@@ -1,6 +1,6 @@
-import React from 'react';
-import { Smartphone, ArrowUp, Building2, ShieldCheck, FileText } from 'lucide-react';
+import { Smartphone, ArrowUp, ShieldCheck, FileText } from 'lucide-react';
 import brandLogo from '../assets/ajo-ng-app-icon.png';
+import { ProvidusBankLogo } from './ProvidusBankLogo';
 import { APP_CONFIG } from '../config/appConfig';
 
 interface FooterProps {
@@ -69,11 +69,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenStoreModal, onNavigate }) 
 
             {/* Providus Bank Partnership Badge in Brand Col */}
             <div className="pt-2">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/90 border border-slate-800 text-xs text-slate-300">
-                <Building2 className="w-3.5 h-3.5 text-cyanBrand-400 shrink-0" />
-                <span>
-                  {APP_CONFIG.partnership.statement}
-                </span>
+              <div className="inline-flex items-center gap-2.5 px-3.5 py-2 rounded-xl bg-slate-900/90 border border-slate-800 text-xs text-slate-300">
+                <span className="text-slate-400 font-medium">{APP_CONFIG.partnership.badgeLabel}:</span>
+                <ProvidusBankLogo size="sm" variant="dark" />
               </div>
             </div>
           </div>

@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ValueProposition } from './components/ValueProposition';
+import { PartnershipSection } from './components/PartnershipSection';
 import { HowItWorks } from './components/HowItWorks';
 import { WhoIsItFor } from './components/WhoIsItFor';
 import { ProductShowcase } from './components/ProductShowcase';
@@ -90,6 +91,7 @@ export function App() {
           <>
             <Hero onOpenStoreModal={() => handleOpenStoreModal('all')} />
             <ValueProposition />
+            <PartnershipSection />
             <HowItWorks />
             <WhoIsItFor />
             <ProductShowcase />
