@@ -1,5 +1,5 @@
 import React from 'react';
-import { Building2, ShieldCheck, CheckCircle2, ArrowRight } from 'lucide-react';
+import { ShieldCheck, CheckCircle2, ArrowRight } from 'lucide-react';
 import brandLogo from '../assets/ajo-ng-app-icon.png';
 import { ProvidusBankLogo } from './ProvidusBankLogo';
 import { APP_CONFIG } from '../config/appConfig';
@@ -36,11 +36,6 @@ export const PartnershipSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-4 mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200/80 text-brand-700 text-xs font-bold uppercase tracking-wider shadow-2xs">
-            <Building2 className="w-3.5 h-3.5 text-brand-600" />
-            <span>{APP_CONFIG.partnership.eyebrow}</span>
-          </div>
-
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             {APP_CONFIG.partnership.headline}
           </h2>

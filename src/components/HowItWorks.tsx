@@ -44,9 +44,6 @@ export const HowItWorks: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-4 mb-16 sm:mb-20">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-100/80 text-brand-700 text-xs font-bold uppercase tracking-wider">
-            <span>Simple 4-Step Process</span>
-          </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             How Rotating Savings (Ajo) Works on AJO.ng
           </h2>

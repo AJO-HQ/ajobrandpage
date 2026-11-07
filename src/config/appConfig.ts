@@ -27,11 +27,11 @@ export interface PartnershipConfig {
 export const APP_CONFIG = {
   brand: {
     name: 'AJO.ng',
-    tagline: 'Your Ajo. Your Story.',
+    tagline: 'Your Savings. Your Story.',
     subheading:
       'Bring your people together, build a consistent savings habit, and work toward shared goals with a more organized way to participate in Ajo.',
     shortDescription:
-      'AJO.ng is a modern mobile platform dedicated to organizing and simplifying community rotating savings groups across Nigeria.',
+      'AJO.ng is a modern mobile platform for organized community rotating savings (Ajo) and independent personal goal-based savings across Nigeria.',
     copyrightYear: new Date().getFullYear(),
   },
 

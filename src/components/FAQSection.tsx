@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, HelpCircle } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 interface FAQItem {
   question: string;
@@ -13,7 +13,12 @@ export const FAQSection: React.FC = () => {
     {
       question: 'What is AJO.ng?',
       answer:
-        'AJO.ng is a modern mobile platform designed specifically to organize, track, and manage community rotating savings groups (popularly known as Ajo, Esusu, or Adashe) in a clear, transparent, and structured way.',
+        'AJO.ng is a modern mobile platform built for two core savings experiences: organized community rotating savings (Ajo) and independent personal goal-based savings. Whether you want to coordinate rotating savings circles with trusted peers or save towards personal milestones at your own pace, AJO.ng provides the clarity and structure you need.',
+    },
+    {
+      question: 'Can I save towards personal goals without joining an Ajo group?',
+      answer:
+        'Yes. Personal goal-based savings on AJO.ng is completely independent. You can define your own target amount, save at your own pace, and monitor your progress in real time without joining, creating, or depending on an Ajo group.',
     },
     {
       question: 'What is Ajo (Rotating Savings)?',
@@ -33,7 +38,7 @@ export const FAQSection: React.FC = () => {
     {
       question: 'Is AJO.ng a web platform or a mobile application?',
       answer:
-        'AJO.ng is focused entirely on delivering a seamless mobile application experience for iOS and Android devices, allowing group members to check schedules, monitor cycles, and receive notifications on the go. This website serves as the official brand information hub.',
+        'AJO.ng is focused entirely on delivering a seamless mobile application experience for iOS and Android devices, allowing members to check schedules, monitor cycles, track personal goals, and receive notifications on the go. This website serves as the official brand information hub.',
     },
     {
       question: 'How do I download the mobile application?',
@@ -43,7 +48,7 @@ export const FAQSection: React.FC = () => {
     {
       question: 'Can I create multiple Ajo groups for different goals?',
       answer:
-        'Yes. You can participate in or organize distinct groups for different circles and purposes — such as a family holiday fund, a business inventory circle, or a salary-earners savings group.',
+        'Yes. You can participate in or organize distinct groups for different circles and purposes — such as a family holiday fund, a business inventory circle, or a salary-earners savings group — alongside your personal goal savings.',
     },
   ];
 
@@ -57,15 +62,11 @@ export const FAQSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center space-y-4 mb-16">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-xs font-bold uppercase tracking-wider">
-            <HelpCircle className="w-3.5 h-3.5" />
-            <span>Got Questions?</span>
-          </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Frequently Asked Questions
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-            Everything you need to know about AJO.ng and rotating community savings.
+            Everything you need to know about AJO.ng, rotating community savings, and personal goals.
           </p>
         </div>
 
@@ -103,16 +104,18 @@ export const FAQSection: React.FC = () => {
                   </button>
                 </h3>
 
-                {isOpen && (
-                  <div
-                    id={contentId}
-                    role="region"
-                    aria-labelledby={headingId}
-                    className="px-6 pb-6 pt-1 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 animate-fade-in"
-                  >
+                <div
+                  id={contentId}
+                  role="region"
+                  aria-labelledby={headingId}
+                  className={`px-6 transition-all duration-200 ease-in-out ${
+                    isOpen ? 'pb-6 pt-0 opacity-100' : 'max-h-0 pb-0 opacity-0 overflow-hidden'
+                  }`}
+                >
+                  <p className="text-sm sm:text-base text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
                     {faq.answer}
-                  </div>
-                )}
+                  </p>
+                </div>
               </div>
             );
           })}

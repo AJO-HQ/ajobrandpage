@@ -1,7 +1,6 @@
 import React from 'react';
 import { Smartphone, ArrowRight, CheckCircle, Users } from 'lucide-react';
 import { PhoneMockup } from './PhoneMockup';
-import { ProvidusBankLogo } from './ProvidusBankLogo';
 import { APP_CONFIG } from '../config/appConfig';
 
 interface HeroProps {
@@ -31,15 +30,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenStoreModal }) => {
           {/* Left Column: Brand Copy & CTAs */}
           <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
             
-            {/* Pill Tag */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 border border-brand-200/80 text-brand-700 text-xs sm:text-sm font-semibold shadow-2xs">
-              <span className="flex h-2 w-2 rounded-full bg-brand-600 animate-pulse" />
-              <span>The Modern Home for Rotating Savings (Ajo)</span>
-            </div>
-
             {/* Main Headline */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
-              Your Ajo.{' '}
+              Your Savings.{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 via-brand-500 to-cyanBrand-600">
                 Your Story.
               </span>
@@ -67,32 +60,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenStoreModal }) => {
                 <span>Discover How It Works</span>
                 <ArrowRight className="w-4 h-4 text-slate-400 group-hover:translate-x-1 transition-transform" />
               </button>
-            </div>
-
-            {/* Trust Highlights & Restrained Providus Bank Partnership Mention */}
-            <div className="pt-4 border-t border-slate-200/80 space-y-3">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-left">
-                <div className="flex items-center gap-2 text-xs font-medium text-slate-600">
-                  <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>Clear rotation schedules</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs font-medium text-slate-600">
-                  <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>Complete group visibility</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs font-medium text-slate-600">
-                  <CheckCircle className="w-4 h-4 text-emerald-600 shrink-0" />
-                  <span>Smart cycle reminders</span>
-                </div>
-              </div>
-
-              {/* Secondary Banking Partnership Indicator */}
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1 text-xs text-slate-500">
-                <span className="font-semibold text-slate-600">{APP_CONFIG.partnership.badgeLabel}:</span>
-                <div className="inline-flex items-center bg-white/95 border border-slate-200/90 px-2.5 py-1 rounded-lg shadow-2xs">
-                  <ProvidusBankLogo size="sm" />
-                </div>
-              </div>
             </div>
           </div>
 
