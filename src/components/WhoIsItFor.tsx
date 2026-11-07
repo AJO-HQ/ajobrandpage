@@ -51,9 +51,6 @@ export const WhoIsItFor: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cyanBrand-50 text-cyanBrand-700 text-xs font-bold uppercase tracking-wider">
-            <span>Built for Every Community</span>
-          </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Designed for Every Group Working Toward Shared Goals
           </h2>

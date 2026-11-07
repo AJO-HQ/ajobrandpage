@@ -1,5 +1,5 @@
 import React from 'react';
-import { Apple, Play, Sparkles, CheckCircle2 } from 'lucide-react';
+import { Apple, Play, CheckCircle2 } from 'lucide-react';
 import brandLogo from '../assets/ajo-ng-app-icon.png';
 import { APP_CONFIG } from '../config/appConfig';
 
@@ -35,11 +35,6 @@ export const DownloadSection: React.FC<DownloadSectionProps> = ({ onOpenStoreMod
             {/* Left Content Column */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
               
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-cyanBrand-300 text-xs font-semibold">
-                <Sparkles className="w-3.5 h-3.5" />
-                <span>Mobile Application</span>
-              </div>
-
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
                 Start Organizing Your Savings Group Today
               </h2>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users2, Eye, CalendarClock, Target, Sparkles, Check } from 'lucide-react';
+import { Users2, Eye, CalendarClock, Target, Check } from 'lucide-react';
 
 export const ValueProposition: React.FC = () => {
   const values = [
@@ -39,10 +39,6 @@ export const ValueProposition: React.FC = () => {
         
         {/* Section Header */}
         <div className="max-w-3xl mx-auto text-center space-y-4 mb-16">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-50 text-brand-700 text-xs font-bold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5 text-brand-600" />
-            <span>Why AJO.ng</span>
-          </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             A More Organized Way to Participate in Community Savings
           </h2>
